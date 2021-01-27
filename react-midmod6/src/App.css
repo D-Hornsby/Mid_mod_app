@@ -1,6 +1,8 @@
 .card {
   width: 18em;
   margin: 10px;
+  outline-style: double;
+  outline-color: rgb(48, 49, 58);
 }
 
 .users {
@@ -12,9 +14,34 @@
 
 .container {
   text-align: center;
+  background-color: rgb(29, 23, 53);
+  
 }
 
 .btn-group {
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+ .jumbotron{
+  background-color: rgb(105, 18, 187);
+  padding-top: 10%;
+ 
+  
+
+
+} 
+
+
+  .display-4{ 
+
+    outline-style: solid;
+    outline-color: rgb(29, 23, 53);
+    padding: 7%;
+  
+  
+}  
+
+#root {
+  background-color: black;
 }

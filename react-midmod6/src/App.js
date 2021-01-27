@@ -8,6 +8,7 @@ class App extends Component {
     this.state = {
       users: [], 
       pageNum: 1,
+      totalPages: 0, 
     }
   }
 
@@ -22,7 +23,7 @@ class App extends Component {
 
     fetch(url)
       .then(res => res.json())
-      .then(res => this.setState({ users:res.data, pageNum: pageNum}))
+      .then(res => this.setState({ users:res.data, pageNum: pageNum, totalPages: res.total_pages}))
 
   }
 
@@ -69,6 +70,7 @@ class App extends Component {
                   <button 
                   type="button" 
                   className="btn btn-secondary"
+                  disable={this.state.pageNum >= this.state.totalPages ? true :false}
                   onClick={() => this.changePage(this.state.pageNum + 1)}
                   >
                     Next

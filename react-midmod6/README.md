@@ -109,6 +109,14 @@ in change page add pageNum to pull from the parameter
 disable prev button if page num is less then 1
 under first type button 
 add disabled= the condition
+will not have less then 1 page
+
+add 1 more property to the state totalPages set to 0 at begining
+then in fetch set totaly of pages when we get a response
+
+add a conditoin in the last button to check if our current page is the last one
+if it is disable button
+add a little css 
 
 
 

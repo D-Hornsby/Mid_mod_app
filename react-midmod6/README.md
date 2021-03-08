@@ -20,16 +20,16 @@ took out the 2 and added = ...
 
 https://reqres.in/
 
-now check to see what we can display form this data
+check to see what displays from data
 create a conts (constituent) user from this . state inside the render method, map method to display users 
 under return 
 each element in our component has to have one element so 
 wrap > Users List:< in div
-here map method to display users
+map method to display users
 add user.id and user.email
 don’t forget the key to be users ID or can map with index
 
-oh wow it works...
+it works...
 
 using bootstrap to style
 html
@@ -50,7 +50,7 @@ in react we need to have className instead of class so fix that
 
 the view has user list in a sort of header and a list called of emails
 
-moving on to cards
+to the cards
 https://getbootstrap.com/docs/4.3/components/card/
 picked simplest can change later
 put inside map method
@@ -66,7 +66,7 @@ remove the button uless you want to do something with it...but i cant think of a
 remove all the paragraph stuff and add {user,email}
 remove style  on cars ass some in css later
 
-omg it actually works after i found my wrong , yaaa
+it works , yaaa
 
 pics are screen width so need to resize cards
 
